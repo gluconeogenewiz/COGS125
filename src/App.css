@@ -1,38 +1,131 @@
-.App {
+body, html {
+  margin: 100;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f4f4f9;
+  color: #333;
+}
+
+nav {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul li {
+  display: inline;
+  margin-right: 10px;
 }
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: #282c34;
   color: white;
+  padding: 40px;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header h1 {
+  font-size: 2.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-section {
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.about-section h2 {
+  color: #333;
+}
+
+
+.projects-section {
+  padding: 20px;
+}
+
+.projects-section h2 {
+  color: #333;
+}
+
+.projects-section ul {
+  padding: 0;
+}
+
+.projects-section li {
+  list-style-type: none;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.contact-section {
+  padding: 20px;
+}
+
+.contact-section h2, .contact-section h3 {
+  color: #333;
+}
+
+.comment-form {
+  margin-top: 20px;
+}
+
+.comment-form input[type="text"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.comment-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comment-form button:hover {
+  background-color: #45a049;
+}
+
+
+nav ul li a {
+  color: #f6e8e8;  /* Text color */
+  text-decoration: none; /* No underline */
+}
+
+nav ul li a svg {
+  margin-right: 5px; /* Space between icon and text */
+  vertical-align: middle; /* Aligns the icon vertically with the text */
 }
